@@ -317,6 +317,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     fields: {
@@ -30052,20 +30053,20 @@ var render = function() {
             }
           },
           [
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "border-b border-40 py-8 px-8 text-90 font-normal text-xl"
+              },
+              [_vm._v("Дополнительные настройки")]
+            ),
+            _vm._v(" "),
             _vm._l(_vm.fields, function(field) {
               return _c(
                 "div",
                 { key: field.attribute, staticClass: "action" },
                 [
-                  _c(
-                    "h2",
-                    {
-                      staticClass:
-                        "border-b border-40 py-8 px-8 text-90 font-normal text-xl"
-                    },
-                    [_vm._v("Дополнительные настройки")]
-                  ),
-                  _vm._v(" "),
                   _c("form-" + field.component, {
                     tag: "component",
                     attrs: { field: field }

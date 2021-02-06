@@ -6,8 +6,9 @@
                 autocomplete="off"
             >
 
+                <h2 class="border-b border-40 py-8 px-8 text-90 font-normal text-xl">Дополнительные настройки</h2>
+
                 <div v-for="field in fields" :key="field.attribute" class="action">
-                    <h2 class="border-b border-40 py-8 px-8 text-90 font-normal text-xl">Дополнительные настройки</h2>
                     <component :is="'form-' + field.component" :field="field"/>
                 </div>
 
