@@ -49,7 +49,7 @@
             },
 
             handleUpdate (formData) {
-                for (let [property, value] of formData.entries()) {
+                for (let [property, value] of formData.entries) {
                     this.setProperty(property, value)
                 }
 

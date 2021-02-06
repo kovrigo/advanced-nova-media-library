@@ -7,12 +7,13 @@
             >
 
                 <div v-for="field in fields" :key="field.attribute" class="action">
+                    <h2 class="border-b border-40 py-8 px-8 text-90 font-normal text-xl">Дополнительные настройки</h2>
                     <component :is="'form-' + field.component" :field="field"/>
                 </div>
 
                 <div class="bg-30 px-6 py-3 flex">
                     <div class="flex items-center ml-auto">
-                        <button type="button" class="btn text-80 font-normal h-9 px-3 mr-3 btn-link" @click.prevent="handleClose">
+                        <button type="button" dusk="cancel-action-button" class="btn btn-link dim cursor-pointer text-80 ml-auto mr-6" @click.prevent="handleClose">
                             {{__('Cancel')}}
                         </button>
 
