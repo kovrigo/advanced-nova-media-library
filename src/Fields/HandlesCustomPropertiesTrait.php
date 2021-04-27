@@ -16,14 +16,14 @@ trait HandlesCustomPropertiesTrait
     protected $customPropertiesFields = [];
     protected $customProperties = [];
 
-    public function customPropertiesFields(array $customPropertiesFields): self
+    public function customPropertiesFields(array $customPropertiesFields)
     {
         $this->customPropertiesFields = collect($customPropertiesFields);
 
         return $this->withMeta(compact('customPropertiesFields'));
     }
 
-    public function customProperties(array $customProperties): self
+    public function customProperties(array $customProperties)
     {
         $this->customProperties = $customProperties;
 
